@@ -1,0 +1,309 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#fff7f9" />
+    <meta name="description" content="A little birthday surprise made with love." />
+    <title>Surprise For You ✨</title>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='26' fill='%23fff1f5'/%3E%3Cpath d='M50 78S17 60 17 37c0-11 8-19 19-19 7 0 12 4 14 9 2-5 7-9 14-9 11 0 19 8 19 19 0 23-33 41-33 41Z' fill='%23ca3d72'/%3E%3Cpath d='M50 70S25 55 25 39c0-7 5-13 12-13 7 0 10 5 13 11 3-6 6-11 13-11 7 0 12 6 12 13 0 16-25 31-25 31Z' fill='%23f7899f'/%3E%3Cpath d='M48 27v-9' stroke='%23e6a83d' stroke-width='4' stroke-linecap='round'/%3E%3Ccircle cx='48' cy='14' r='4' fill='%23e6a83d'/%3E%3C/svg%3E" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="site-shell">
+      <div class="ambient ambient-one" aria-hidden="true"></div>
+      <div class="ambient ambient-two" aria-hidden="true"></div>
+      <div class="ambient ambient-three" aria-hidden="true"></div>
+      <div class="sparkle-field" aria-hidden="true">
+        <span class="sparkle sparkle-a">✦</span>
+        <span class="sparkle sparkle-b">✧</span>
+        <span class="sparkle sparkle-c">✦</span>
+        <span class="sparkle sparkle-d">✧</span>
+        <span class="sparkle sparkle-e">✦</span>
+        <span class="sparkle sparkle-f">✧</span>
+        <span class="heart-float heart-a">♥</span>
+        <span class="heart-float heart-b">♡</span>
+        <span class="heart-float heart-c">♥</span>
+      </div>
+
+      <header class="topbar">
+        <a class="brand" href="#start" aria-label="Go to the beginning">
+          <span>Surprise For You</span>
+          <span class="brand-sparkle">✦</span>
+        </a>
+        <div class="top-actions">
+          <button class="melody-toggle glass-chip" type="button" aria-pressed="false" aria-label="Play the birthday melody">
+            <span class="music-note" aria-hidden="true">♫</span>
+            <span class="melody-label">MELODY</span>
+            <span class="sound-bars" aria-hidden="true"><i></i><i></i><i></i></span>
+          </button>
+          <button class="profile-button" type="button" aria-label="Personalize this birthday surprise">✦</button>
+        </div>
+      </header>
+
+      <main>
+        <section class="intro-stage section-shell screen active-screen" id="start" aria-labelledby="start-title">
+          <div class="progress-wrap" aria-label="Birthday surprise steps">
+            <div class="progress-pill"><span class="progress-active"><span aria-hidden="true">♡</span> START</span><span class="progress-dot current"></span><span class="progress-dot"></span><span class="progress-dot"></span><span class="progress-dot"></span></div>
+          </div>
+          <div class="eyebrow"><span>✦</span> A LITTLE SURPRISE IS BEING WRITTEN <span>✦</span></div>
+          <h1 id="start-title">This celebration is for <em id="start-recipient">Vaishnavi Jii</em></h1>
+          <p class="intro-copy">Before the flowers bloom and the wishes begin, tell us the beautiful name this little world is made for.</p>
+          <form class="name-card glass-card" id="name-form">
+            <div class="name-card-icon" aria-hidden="true">♥</div>
+            <label for="birthday-name">Birthday person’s name</label>
+            <input id="birthday-name" type="text" maxlength="32" value="Vaishnavi Jii" placeholder="Enter her name" autocomplete="off" required />
+            <button class="primary-button" type="submit"><span>Begin the surprise</span><span aria-hidden="true">→</span></button>
+            <p class="name-note"><span>✦</span> Made with love, just for her <span>✦</span></p>
+          </form>
+          <p class="scroll-prompt">Your story starts here <span aria-hidden="true">↓</span></p>
+        </section>
+
+        <section class="blessing-stage section-shell screen locked-stage" id="ganesha" aria-labelledby="deity-title" aria-hidden="true">
+          <div class="blessing-copy">
+            <div class="eyebrow"><span>✦</span> FIRST, A BLESSING <span>✦</span></div>
+            <h2 id="deity-title">May every path ahead be filled with <em>light</em></h2>
+            <p class="blessing-intro" id="deity-blessing">With the blessings of Lord Ganesha, may this new year of life bring peace to her heart, joy to her days, and beautiful beginnings that feel like magic.</p>
+            <p class="name-greeting">For <strong class="name-placeholder">your favorite person</strong> <span>♥</span></p>
+            <button class="secondary-button continue-button" type="button" data-target="bouquet">Continue to the flowers <span>→</span></button>
+          </div>
+          <figure class="ganesha-frame glass-card" aria-label="Rotating devotional blessings">
+            <div class="image-halo"></div>
+            <div class="deity-carousel" id="deity-carousel">
+              <div class="deity-slide active" data-caption="Shree Ganeshaya Namah" data-title="May every path ahead be filled with light" data-blessing="With the blessings of Lord Ganesha, may every obstacle become smaller, every beginning feel blessed, and every dream find a beautiful way forward.">
+                <img src="assets/ganesha-devotion.png" alt="A serene devotional portrait of Lord Ganesha surrounded by pink flowers and glowing diyas" />
+              </div>
+              <div class="deity-slide" data-caption="May Lord Krishna fill her life with love" data-title="May love and joy follow her everywhere" data-blessing="With the blessings of Lord Krishna, may her days be filled with love, laughter, sweet surprises, and the courage to follow her heart.">
+                <img src="assets/krishna-devotion.png" alt="A serene devotional portrait of Lord Krishna with a flute surrounded by flowers and diyas" />
+              </div>
+              <div class="deity-slide" data-caption="May Lord Shiva bless her with peace" data-title="May peace become her greatest strength" data-blessing="With the blessings of Lord Shiva, may her heart stay calm, her spirit stay strong, and every new chapter bring deep peace and inner light.">
+                <img src="assets/shiva-devotion.png" alt="A serene devotional portrait of Lord Shiva meditating beside a trishul and glowing diyas" />
+              </div>
+            </div>
+            <div class="deity-controls" aria-label="Change devotional image">
+              <button type="button" id="deity-prev" aria-label="Previous blessing">‹</button>
+              <div class="deity-dots">
+                <button type="button" class="active" data-deity="0" aria-label="Show Lord Ganesha"></button>
+                <button type="button" data-deity="1" aria-label="Show Lord Krishna"></button>
+                <button type="button" data-deity="2" aria-label="Show Lord Shiva"></button>
+              </div>
+              <button type="button" id="deity-next" aria-label="Next blessing">›</button>
+            </div>
+            <figcaption><span>✦</span> <span id="deity-caption">Shree Ganeshaya Namah</span> <span>✦</span></figcaption>
+          </figure>
+        </section>
+
+        <section class="bouquet-stage section-shell screen locked-stage" id="bouquet" aria-labelledby="bouquet-title" aria-hidden="true">
+          <div class="eyebrow"><span>✦</span> A GIFT OF SOFTNESS <span>✦</span></div>
+          <h2 id="bouquet-title">A bouquet for <em class="name-placeholder">your favorite person</em></h2>
+          <p class="bouquet-intro">Every flower carries a little feeling: admiration, gratitude, and the promise of a year full of beautiful moments.</p>
+          <div class="bouquet-card glass-card">
+            <div class="bouquet-image-wrap" id="bouquet-photo" role="button" tabindex="0" aria-label="Tap the flower bouquet to open the birthday wish"><div class="bouquet-glow"></div><img src="assets/flower-bouquet-real.jpeg" alt="A real blue handmade flower bouquet wrapped in black paper with gold ribbon" /><span class="bouquet-tag">for you<br /><b>with love</b></span><span class="bouquet-tap-hint">Tap me ✦</span></div>
+            <div class="bouquet-actions"><p><span>✦</span> Take a deep breath and tap the bouquet <span>✦</span></p><button class="primary-button" id="tap-bouquet" type="button"><span aria-hidden="true">💐</span> Tap for your birthday wish</button></div>
+          </div>
+        </section>
+
+        <section class="reveal-screen screen locked-stage" id="reveal" aria-labelledby="reveal-title" aria-hidden="true">
+          <div class="reveal-stars" aria-hidden="true"><span>✦</span><span>✧</span><span>·</span><span>✦</span><span>·</span><span>♡</span><span>✧</span><span>·</span><span>✦</span><span>·</span></div>
+          <div class="reveal-inner">
+            <div class="reveal-kicker"><span>✦</span> A WISH WRITTEN IN THE STARS <span>✦</span></div>
+            <div class="reveal-crown">✦</div>
+            <h1 id="reveal-title">Happy Birthday<br /><em class="reveal-name">you</em> <span class="reveal-heart" aria-hidden="true">♥</span></h1>
+            <p class="reveal-message">May this year be as kind, warm, and beautiful as your heart.</p>
+            <div class="reveal-seal"><span>for</span><strong class="reveal-name">you</strong><span>with love</span></div>
+            <button class="primary-button reveal-continue" type="button" data-target="welcome">Continue to your birthday journey <span aria-hidden="true">→</span></button>
+          </div>
+        </section>
+
+        <section class="hero section-shell screen locked-stage" id="welcome" aria-labelledby="page-title" aria-hidden="true">
+          <div class="progress-wrap" aria-label="Birthday journey progress">
+            <div class="progress-pill">
+              <span class="progress-active"><span aria-hidden="true">♡</span> START</span>
+              <span class="progress-dot current" data-progress="0"></span>
+              <span class="progress-dot" data-progress="1"></span>
+              <span class="progress-dot" data-progress="2"></span>
+              <span class="progress-dot" data-progress="3"></span>
+            </div>
+          </div>
+
+          <div class="eyebrow"><span>✦</span> A SPECIAL CHAPTER BEGINS <span>✦</span></div>
+          <h1 id="page-title">Happy Birthday <span class="hero-heart" aria-hidden="true">♥</span></h1>
+          <p class="hero-subtitle">Today is all about celebrating <em id="hero-recipient">you</em> <span class="underline-sparkle">✦</span></p>
+
+          <div class="cake-card glass-card" aria-label="A three-tier birthday cake with a glowing candle">
+            <div class="cake-scene">
+              <div class="sun-ray ray-1"></div>
+              <div class="sun-ray ray-2"></div>
+              <div class="sun-ray ray-3"></div>
+              <div class="sun-ray ray-4"></div>
+              <div class="sun-ray ray-5"></div>
+              <div class="candle-glow"></div>
+              <div class="candle">
+                <div class="flame" id="hero-flame" aria-hidden="true"></div>
+                <div class="wick"></div>
+                <div class="candle-stick"></div>
+              </div>
+              <div class="cake cake-top"><span class="icing-wave"></span></div>
+              <div class="cake cake-middle"><span class="icing-wave"></span><span class="berry berry-1"></span><span class="berry berry-2"></span><span class="berry berry-3"></span></div>
+              <div class="cake cake-bottom"><span class="icing-wave"></span><span class="dot dot-1"></span><span class="dot dot-2"></span><span class="dot dot-3"></span><span class="dot dot-4"></span><span class="dot dot-5"></span><span class="dot dot-6"></span></div>
+              <div class="cake-platter"></div>
+            </div>
+            <div class="cake-caption"><span class="caption-dot"></span> Crafted with love, warmth &amp; starlight</div>
+          </div>
+
+          <button class="primary-button hero-cta" id="open-surprise" type="button">
+            <span class="button-gift" aria-hidden="true">🎁</span>
+            <span>Open Your Surprise</span>
+            <span class="arrow" aria-hidden="true">→</span>
+          </button>
+          <p class="cta-hint">Tap the box to unlock your personalized birthday journey</p>
+
+          <div class="chapter-cards" aria-label="Birthday journey chapters">
+            <button class="chapter-card chapter-memory" type="button" data-target="memories">
+              <span class="chapter-icon">▱</span>
+              <span class="chapter-copy"><small>CHAPTER I</small><strong>Golden Memories</strong></span>
+            </button>
+            <button class="chapter-card chapter-wish" type="button" data-target="wish">
+              <span class="chapter-icon">♧</span>
+              <span class="chapter-copy"><small>CHAPTER II</small><strong>Make a Secret Wish</strong></span>
+            </button>
+            <button class="chapter-card chapter-final" type="button" data-target="final">
+              <span class="chapter-icon">🎁</span>
+              <span class="chapter-copy"><small>FINAL STAGE</small><strong>The Grand Reveal</strong></span>
+            </button>
+          </div>
+        </section>
+
+        <section class="journey-section section-shell screen locked-stage" id="memories" aria-labelledby="memories-title" aria-hidden="true">
+          <div class="section-heading">
+            <div class="eyebrow"><span>✦</span> CHAPTER I <span>✦</span></div>
+            <h2 id="memories-title">The little moments that make <span id="memories-recipient">Vaishnavi Jii</span> <em>magic</em></h2>
+            <p>A tiny collection of reminders of why your presence makes ordinary days feel golden.</p>
+          </div>
+          <div class="memory-grid">
+            <article class="memory-card memory-card-one glass-card">
+              <div class="memory-art memory-photo art-one" data-lightbox="assets/memory-vaishnavi-1.jpeg" data-photo-alt="Vaishnavi smiling in a white outfit" role="button" tabindex="0" aria-label="View Vaishnavi photo"><img src="assets/memory-vaishnavi-1.jpeg" alt="Vaishnavi smiling in a white outfit" /><span class="memory-photo-caption">good<br />days ✦</span></div>
+              <div class="memory-copy"><span class="memory-number">01</span><h3>That warmest smile</h3><p>The kind that makes an ordinary moment feel softer, brighter, and completely yours.</p></div>
+            </article>
+            <article class="memory-card memory-card-two glass-card">
+              <div class="memory-art memory-photo art-two" data-lightbox="assets/memory-vaishnavi-2.jpeg" data-photo-alt="A close-up portrait of Vaishnavi smiling" role="button" tabindex="0" aria-label="View Vaishnavi photo"><img src="assets/memory-vaishnavi-2.jpeg" alt="A close-up portrait of Vaishnavi smiling" /><span class="memory-photo-caption">little<br />joys ✦</span></div>
+              <div class="memory-copy"><span class="memory-number">02</span><h3>Every tiny adventure</h3><p>For the laughs, the late talks, and all the beautiful detours in between.</p></div>
+            </article>
+            <article class="memory-card memory-card-three glass-card">
+              <div class="memory-art memory-photo art-three" data-lightbox="assets/vaishnavi-birthday-poster.jpg" data-photo-alt="Vaishnavi Jii birthday blessings poster" role="button" tabindex="0" aria-label="View Vaishnavi Jii birthday poster"><img src="assets/vaishnavi-birthday-poster.jpg" alt="Vaishnavi Jii birthday blessings poster" /><span class="memory-photo-caption">sweet<br />dreams ✦</span></div>
+              <div class="memory-copy"><span class="memory-number">03</span><h3>The way you care</h3><p>Your kindness is a quiet superpower. Never forget how loved you are.</p></div>
+            </article>
+          </div>
+          <button class="secondary-button next-button" type="button" data-target="wish">Continue to your wish <span>→</span></button>
+        </section>
+
+        <section class="journey-section section-shell wish-section screen locked-stage" id="wish" aria-labelledby="wish-title" aria-hidden="true">
+          <div class="section-heading">
+            <div class="eyebrow"><span>✦</span> CHAPTER II <span>✦</span></div>
+            <h2 id="wish-title">Make a wish, <em>beautiful soul</em></h2>
+            <p>Write one wish for the year ahead. Keep it close, then send it into the stars.</p>
+          </div>
+          <div class="wish-layout">
+            <div class="wish-illustration glass-card" aria-hidden="true">
+              <div class="moon">☾</div>
+              <div class="wish-star star-1">✦</div><div class="wish-star star-2">✧</div><div class="wish-star star-3">✦</div>
+              <div class="wish-cloud cloud-1"></div><div class="wish-cloud cloud-2"></div>
+              <div class="wish-orbit"></div>
+              <span class="wish-tag">A wish made<br />with love</span>
+            </div>
+            <form class="wish-form glass-card" id="wish-form">
+              <label for="wish-input">Your secret wish</label>
+              <textarea id="wish-input" maxlength="180" placeholder="I wish for..." required></textarea>
+              <div class="form-footer"><span id="wish-count">0 / 180</span><button class="primary-button small-button" type="submit">Send to the stars <span>✦</span></button></div>
+              <p class="form-status" id="wish-status" role="status"></p>
+            </form>
+          </div>
+        </section>
+
+        <section class="journey-section section-shell cake-section screen locked-stage" id="cake" aria-labelledby="cake-title" aria-hidden="true">
+          <div class="section-heading">
+            <div class="eyebrow"><span>✦</span> A LITTLE BIRTHDAY MAGIC <span>✦</span></div>
+            <h2 id="cake-title">One candle, <em>one wish</em></h2>
+            <p>Tap the flame to blow out the candle and make the moment yours.</p>
+          </div>
+          <div class="candle-card glass-card" id="candle-card">
+            <div class="big-cake-scene">
+              <div class="big-flame" id="big-flame"></div>
+              <div class="big-wick"></div>
+              <div class="big-candle"></div>
+              <div class="big-cake cake-layer-small"></div>
+              <div class="big-cake cake-layer-large"></div>
+              <div class="big-platter"></div>
+            </div>
+            <button class="flame-button" id="blow-candle" type="button"><span aria-hidden="true">✦</span> Blow out the candle</button>
+            <p class="candle-message" id="candle-message">Close your eyes. The best is still on its way.</p>
+          </div>
+        </section>
+
+        <section class="journey-section section-shell final-section screen locked-stage" id="final" aria-labelledby="final-title" aria-hidden="true">
+          <div class="final-card glass-card" id="letter-card">
+            <div class="letter-cover" id="letter-cover" aria-label="Vaishnavi Jii birthday poster and blessing letter">
+              <div class="letter-cover-glow"></div>
+              <div class="poster-photo" id="poster-photo" data-lightbox="assets/vaishnavi-birthday-poster.jpg" data-photo-alt="Vaishnavi Jii birthday blessings poster" role="button" tabindex="0" aria-label="Tap to view Vaishnavi Jii birthday poster">
+                <img src="assets/vaishnavi-birthday-poster.jpg" alt="Vaishnavi Jii birthday blessings poster" />
+                <span>Tap photo to view ✦</span>
+              </div>
+              <div class="letter-cover-copy">
+                <div class="envelope-icon">✉</div>
+                <p class="letter-cover-kicker">A PRIVATE BLESSING FOR HER</p>
+                <h2>One last little letter</h2>
+                <p>Tap her photo to see it clearly, or open the words saved especially for <strong class="name-placeholder">Vaishnavi Jii</strong>.</p>
+                <button class="letter-open-hint" id="open-letter-button" type="button">Open the blessing letter <b>→</b></button>
+              </div>
+            </div>
+            <div class="final-ribbon">THE GRAND REVEAL <span>✦</span></div>
+            <div class="final-copy letter-content" aria-hidden="true">
+              <p class="letter-kicker">A blessing for <span id="letter-recipient">you</span></p>
+              <h2 id="final-title">May every blessing find <em>you</em>.</h2>
+              <p class="letter-body">May Lord Ganesha remove every obstacle, may Lord Krishna fill your days with love, and may Lord Shiva bless your heart with peace. May this new chapter bring you the kind of happiness that stays, the kind of people who choose you every day, and a thousand reasons to smile.</p>
+              <p class="signature">With all my love,<br /><strong id="letter-sender">someone who adores you</strong> <span>♥</span></p>
+              <button class="primary-button" id="replay-button" type="button"><span>↻</span> Replay the magic</button>
+            </div>
+            <div class="final-orbit" aria-hidden="true"><span>♥</span><span>✦</span><span>♡</span><div class="orbit-ring"></div><div class="orbit-core">🎁</div></div>
+          </div>
+        </section>
+      </main>
+
+      <nav class="bottom-nav" aria-label="Birthday journey navigation">
+        <button class="nav-item active" type="button" data-target="start"><span>♡</span><b>Start</b></button>
+        <button class="nav-item" type="button" data-target="ganesha"><span>ॐ</span><b>Blessing</b></button>
+        <button class="nav-item" type="button" data-target="bouquet"><span>✿</span><b>Flowers</b></button>
+        <button class="nav-item" type="button" data-target="reveal"><span>✧</span><b>Wish</b></button>
+        <button class="nav-item" type="button" data-target="final"><span>🎁</span><b>Final</b></button>
+      </nav>
+    </div>
+
+    <div class="modal-backdrop" id="personalize-modal" aria-hidden="true">
+      <div class="personalize-modal glass-card" role="dialog" aria-modal="true" aria-labelledby="personalize-title">
+        <button class="modal-close" type="button" aria-label="Close personalization dialog">×</button>
+        <div class="modal-icon">✦</div>
+        <div class="eyebrow">MAKE IT YOURS</div>
+        <h2 id="personalize-title">Personalize the surprise</h2>
+        <p>Give this little birthday world a name and a signature.</p>
+        <form id="personalize-form">
+          <label for="recipient-input">Her name <span>(optional)</span></label>
+          <input id="recipient-input" type="text" maxlength="32" placeholder="Your favorite person's name" />
+          <label for="sender-input">From</label>
+          <input id="sender-input" type="text" maxlength="42" placeholder="Your name or a sweet sign-off" />
+          <button class="primary-button modal-submit" type="submit">Save the surprise <span>♥</span></button>
+        </form>
+      </div>
+    </div>
+
+    <div class="photo-lightbox" id="photo-lightbox" aria-hidden="true">
+      <button class="photo-lightbox-close" id="photo-lightbox-close" type="button" aria-label="Close photo">×</button>
+      <figure>
+        <img id="lightbox-image" src="" alt="" />
+        <figcaption id="lightbox-caption">Vaishnavi Jii ✦</figcaption>
+      </figure>
+    </div>
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+    <div class="confetti-layer" id="confetti-layer" aria-hidden="true"></div>
+    <script src="script.js"></script>
+  </body>
+</html>
