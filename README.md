@@ -12,7 +12,8 @@ An interactive, full-screen birthday surprise website built with plain HTML, CSS
 6. The bouquet gives a small glow, sparkle burst, and pop animation before opening the black-screen Happy Birthday reveal.
 7. Continue into the birthday memories page, now featuring the provided Vaishnavi photos and birthday poster in the third card.
 8. Continue to the cake page with glowing, breathing cake animation.
-9. Open the final sealed blessing letter by clicking or pressing Enter on the letter.
+9. Click the new Continue to the final blessing button after the cake page.
+10. Open the final sealed blessing letter by clicking or pressing Enter on the letter.
 
 Every step is a separate screen; buttons change the page state instead of making the user scroll through one long page.
 

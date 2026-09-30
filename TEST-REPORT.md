@@ -45,6 +45,7 @@
 - Blessing heading, paragraph, and caption update with the active devotional image.
 - Bouquet photo click opens the birthday reveal with pop, glow, sparkle, and confetti animation.
 - Cake page has animated aura, sparkles, breathing cake, and candle interaction.
+- Cake page now includes a clear Continue to the final blessing button.
 - Final blessing letter opens through its dedicated button.
 - Replay resets the journey and reseals the letter.
 

@@ -383,3 +383,9 @@ body { background: #f5deea; }
   .letter-cover-copy > p { font-size: 12px; margin-inline: auto; }
   .letter-open-hint { margin-top: 13px; }
 }
+
+/* Clear next-step action after the candle page */
+.next-stage-button { min-height: 46px; margin-top: 20px; padding: 0 19px; font-size: 14px; background: linear-gradient(112deg, #c93472, #8b4d9d); box-shadow: 0 9px 21px rgba(178,32,104,.22); }
+.next-stage-button:hover { transform: translateY(-3px); box-shadow: 0 13px 28px rgba(178,32,104,.3); }
+.next-stage-button span { font-size: 21px; font-weight: 400; }
+@media (max-width: 760px) { .next-stage-button { width: 100%; font-size: 13px; } }
